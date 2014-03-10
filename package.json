@@ -1,0 +1,12 @@
+{
+  "name": "language-nginx",
+  "version": "0.0.0",
+  "description": "Syntax and snippet support for Nginx configuration files",
+  "repository": "https://github.com/hnagato/atom-language-nginx",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
