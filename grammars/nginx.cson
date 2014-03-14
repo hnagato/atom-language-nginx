@@ -62,6 +62,10 @@
     'name': 'constant.language.directive.module.http'
   }
   {
+    'match': '\\b(try_files)\\b'
+    'name': 'constant.language.module.http.core'
+  }
+  {
     'match': '\\b(allow|deny)\\b'
     'name': 'constant.language.module.http.access'
   }
@@ -126,7 +130,7 @@
     'name': 'constant.language.module.http.proxy'
   }
   {
-    'match': '\\b(break|if|return|reqrite|set|uninitialized_variable_warn)\\b'
+    'match': '\\b(break|if|return|rewrite|set|uninitialized_variable_warn)\\b'
     'name': 'constant.language.module.http.rewrite'
   }
   {
