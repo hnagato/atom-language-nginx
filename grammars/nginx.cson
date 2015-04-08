@@ -146,7 +146,7 @@
     'name': 'constant.language.module.http.upstream'
   }
   {
-    'match', '\\b(set_real_ip_from|real_ip_header|real_ip_recursive)\\b'
+    'match': '\\b(set_real_ip_from|real_ip_header|real_ip_recursive)\\b'
     'name': 'constant.language.module.http.realip'
   }
   {
