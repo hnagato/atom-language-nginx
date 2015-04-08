@@ -62,7 +62,7 @@
     'name': 'constant.language.directive.module.http'
   }
   {
-    'match': '\\b(try_files)\\b'
+    'match': '\\b(aio|alias|chunked_transfer_encoding|client_body_buffer_size|client_body_in_file_only|client_body_in_single_buffer|client_body_temp_path|client_body_timeout|client_header_buffer_size|client_header_timeout|client_max_body_size|connection_pool_size|default_type|directio|directio_alignment|disable_symlinks|error_page|etag|http|if_modified_since|ignore_invalid_headers|internal|keepalive_disable|keepalive_requests|keepalive_timeout|large_client_header_buffers|limit_except|limit_rate|limit_rate_after|lingering_close|lingering_time|lingering_timeout|listen|location|log_not_found|log_subrequest|max_ranges|merge_slashes|msie_padding|msie_refresh|open_file_cache|open_file_cache_errors|open_file_cache_min_uses|open_file_cache_valid|optimize_server_names|output_buffers|port_in_redirect|postpone_output|read_ahead|recursive_error_pages|request_pool_size|reset_timedout_connection|resolver|resolver_timeout|root|satisfy|satisfy_any|send_lowat|send_timeout|sendfile|sendfile_max_chunk|server|server_name|server_name_in_redirect|server_names_hash_bucket_size|server_names_hash_max_size|server_tokens|tcp_nodelay|tcp_nopush|try_files|types|types_hash_bucket_size|types_hash_max_size|underscores_in_headers|variables_hash_bucket_size|variables_hash_max_size)\\b'
     'name': 'constant.language.module.http.core'
   }
   {
@@ -102,6 +102,10 @@
     'name': 'constant.language.module.http.gzip'
   }
   {
+    'match': '\\b(gzip_static)\\b'
+    'name': 'constant.language.module.http.gzip_static'
+  }
+  {
     'match': '\\b(add_header|expires|server_tokens)\\b'
     'name': 'constant.language.module.http.headers'
   }
@@ -126,7 +130,7 @@
     'name': 'constant.language.module.http.memcached'
   }
   {
-    'match': '\\b(proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_connect_timeout|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_http_version|proxy_ign|ore_client_abortproxy_intercept_errors|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_pass|proxy_pass_header|proxy_pass_request_body|proxy_pass_request_headers|proxy_|redirectproxy_read_timeout|proxy_redirect|proxy_redirect_errors|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_t|emp_pathproxy_upstream_fail_timeout|proxy_upstream_max_fails)\\b'
+    'match': '\\b(proxy_bind|proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_cache|proxy_cache_bypass|proxy_cache_key|proxy_cache_lock|proxy_cache_lock_age|proxy_cache_lock_timeout|proxy_cache_methods|proxy_cache_min_uses|proxy_cache_path|proxy_cache_purge|proxy_cache_revalidate|proxy_cache_use_stale|proxy_cache_valid|proxy_connect_timeout|proxy_cookie_domain|proxy_cookie_path|proxy_force_ranges|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_http_version|proxy_ignore_client_abort|proxy_ignore_headers|proxy_intercept_errors|proxy_limit_rate|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_next_upstream_timeout|proxy_next_upstream_tries|proxy_no_cache|proxy_pass|proxy_pass_header|proxy_read_timeout|proxy_pass_request_body|proxy_pass_request_headers|proxy_redirect|proxy_request_buffering|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_ssl_certificate|proxy_ssl_certificate_key|proxy_ssl_ciphers|proxy_ssl_crl|proxy_ssl_name|proxy_ssl_password_file|proxy_ssl_server_name|proxy_ssl_session_reuse|proxy_ssl_protocols|proxy_ssl_trusted_certificate|proxy_ssl_verify|proxy_ssl_verify_depth|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_temp_path)\\b'
     'name': 'constant.language.module.http.proxy'
   }
   {
@@ -140,6 +144,10 @@
   {
     'match': '\\b(ip_hash|upstream|server)\\b'
     'name': 'constant.language.module.http.upstream'
+  }
+  {
+    'match', '\\b(set_real_ip_from|real_ip_header|real_ip_recursive)\\b'
+    'name': 'constant.language.module.http.realip'
   }
   {
     'match': '\\b(userid|userid_domain|userid_expires|userid_name|userid_p3p|userid_path|userid_service)\\b'
