@@ -74,7 +74,7 @@
     'name': 'constant.language.module.http.auth_basic'
   }
   {
-    'match': '\\b(autoindex|autoindex_exact_size|autoindex_localtime)\\b'
+    'match': '\\b(autoindex|autoindex_exact_size|autoindex_localtime|autoindex_format)\\b'
     'name': 'constant.language.module.http.autoindex'
   }
   {
