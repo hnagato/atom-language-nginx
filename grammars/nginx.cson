@@ -5,7 +5,7 @@
 'foldingStartMarker': '\\{\\s*$'
 'foldingStopMarker': '^\\s*\\}'
 'name': 'nginx'
-'scopeName': 'source'
+'scopeName': 'source.nginx'
 'patterns': [
   {
     'match': '\\#.*$'
