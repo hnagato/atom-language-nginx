@@ -164,8 +164,12 @@
     'name': 'support.function.directive.module.http.referer'
   }
   {
-    'match': '\\b(limit_zone|limit_conn)\\b'
-    'name': 'support.function.directive.module.http.limit_zone'
+    'match': '\\b(limit_conn|limit_conn_log_level|limit_conn_status|limit_conn_zone|limit_zone)\\b'
+    'name': 'support.function.directive.module.http.limit_conn'
+  }
+  {
+    'match': '\\b(limit_req|limit_req_log_level|limit_req_status|limit_req_zone)\\b'
+    'name': 'support.function.directive.module.http.limit_req'
   }
   {
     'match': '\\b(access_log|log_format)\\b'
@@ -208,4 +212,3 @@
     'name': 'support.function.directive.module.http.lua'
   }
 ]
-
