@@ -1,6 +1,7 @@
 'fileTypes': [
   'conf',
-  'nginx'
+  'nginx',
+  'nginxconf'
 ]
 'foldingStartMarker': '\\{\\s*$'
 'foldingStopMarker': '^\\s*\\}'
